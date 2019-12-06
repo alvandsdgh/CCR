@@ -287,7 +287,7 @@ class CreateTab extends Component {
                   onClick={() => {
                     window.location.reload();
                   }}
-                  className="mt-4 mb-5 btn btn-create"
+                  className="btn-create-record mt-4 mb-5 btn "
                 >
                   Record Another
                 </button>
