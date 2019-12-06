@@ -54,7 +54,7 @@ class VerifyTab extends Component {
         <div className="container">
           <h3
             style={{
-              fontWeight: "800"
+              fontWeight: "600"
             }}
           >
             Verify your document on the blockchain
@@ -202,7 +202,7 @@ class VerifyTab extends Component {
                       backgroundColor: "#F9F7F7",
                       padding: "2%",
                       border: "2px solid #D4D1D0",
-                      // color: "#969696",
+                      color: "#969696",
                       fontSize: "20px",
                       display: "inline-block",
                       borderRadius: "14px",
@@ -210,7 +210,7 @@ class VerifyTab extends Component {
                       cursor: "pointer"
                     }}
                   >
-                    BROWSE A File...
+                    Browse A File
                   </label>
                 </div>
                 <div className="mt-2">
@@ -220,19 +220,19 @@ class VerifyTab extends Component {
                       color: "#BDBEBE"
                     }}
                   >
-                    {this.state.name ? this.state.name : "Report.pdf"}
+                    {this.state.name ? this.state.name : "No files is added"}
                   </span>
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h2
+                <h3
                   style={{
                     // color: "#6F706F",
                     fontWeight: "600"
                   }}
                 >
                   Input a Document Hash
-                </h2>
+                </h3>
                 <span
                   style={{
                     fontWeight: "400",
@@ -287,7 +287,7 @@ class VerifyTab extends Component {
             >
               <button
                 className="mt-4 mb-5 btn btn-verify"
-                style={{ fontWeight: "700" }}
+                style={{ fontWeight: "400" }}
                 onClick={() => {
                   if (!this.state.hashExists) {
                     this.checkHash(this.state.hash);

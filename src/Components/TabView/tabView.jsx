@@ -7,7 +7,7 @@ const TabView = props => {
     <React.Fragment>
       <div
         style={{
-          marginTop: "40px",
+          marginTop: "20px",
           border: "1px solid #d0d0d0",
           borderRadius: "3px",
           WebkitBoxShadow: "2px 3px 3px 0px rgba(0, 0, 0, 0.2)",

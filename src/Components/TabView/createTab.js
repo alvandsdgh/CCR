@@ -86,9 +86,10 @@ class CreateTab extends Component {
           </h3>
           <span
             style={{
-              // fontFamily: "Proxima Nova",
-              fontWeight: "500",
-              color: "#000000"
+
+              fontWeight: "600",
+              fontSize: "18px",
+              color: "#6F706F"
             }}
           >
             The hash is a sha256 hash of the content of your document.
@@ -131,22 +132,33 @@ class CreateTab extends Component {
                     data-multiple-caption="{count} files selected"
                     multiple
                   />
-                  <label className="w-100 h-100 file" htmlFor="fileInput">
-                    Choose a file
+                  <label className="btn btn-lg " htmlFor="fileInput" style={{
+                    backgroundColor: "#F9F7F7",
+                    padding: "10px 50px",
+                    border: "2px solid #D4D1D0",
+                    color: "#969696",
+                    fontSize: "20px",
+                    display: "inline-block",
+                    borderRadius: "14px",
+                    marginTop: "16px",
+                    cursor: "pointer"
+                  }} >
+                    Choose A File
                   </label>
                 </div>
                 <div
                   className="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-xs-6"
-                  style={{ marginTop: "20px" }}
+                  style={{ marginTop: "50px" }}
                 >
                   <span
                     style={{
                       fontFamily: "Proxima Nova",
                       fontWeight: "400",
                       color: "#000000"
+
                     }}
                   >
-                    {this.state.fileName ? this.state.fileName : "Report.pdf"}
+                    {this.state.fileName ? this.state.fileName : "No file is added"}
                   </span>
                 </div>
                 <div className="d-none d-xl-block d-lg-block d-md-block d-sm-block col-xl-3 col-lg-3 col-md-2 col-sm-2" />
@@ -280,7 +292,7 @@ class CreateTab extends Component {
                   Record Another
                 </button>
               ) : this.state.recordStatus === true ? (
-                <button disabled className="mt-4 mb-5 btn btn-create-disabled">
+                <button disabled className="mt-4 mb-5 btn btn-verify btn-create-disabled">
                   Record
                 </button>
               ) : (

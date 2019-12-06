@@ -55,8 +55,8 @@ class Banner extends Component {
               </div>
               <div className="row">
                 <div className="col">
-                  <div className="text-center mt-2 text-animation">
-                    <p className="text-center ">
+                  <div className="mt-2 text-animation">
+                    <p className="">
                       Prove It works with accredited professional notaries,
                       institutional partners and jurisdictional legislatures to
                       record and prove the existence, substance, and property of
